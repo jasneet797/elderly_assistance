@@ -11,6 +11,7 @@ import AboutUs from './pages/AboutUs';
 
 const App = () => {
   return (
+    <Layout>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +23,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </Router>
-  );
+    </Layout>  );
 };
 
 export default App;
